@@ -6209,10 +6209,37 @@ mongodb@3.6.2:
   optionalDependencies:
     saslprep "^1.0.0"
 
+mongoose-float@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/mongoose-float/-/mongoose-float-1.0.4.tgz#abdda2c66320a8acf8a13a8b704c9b7ea4b5b840"
+  integrity sha512-0IMn9yADWithih3QEiwiqx+gYAEx5ZIQgKrIaLTX76jfJIq5WRzifGT/KDGqGm5q9NI5WLsgt7oblM3hNv/llw==
+
 mongoose-legacy-pluralize@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
   integrity sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
+
+mongoose-long@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/mongoose-long/-/mongoose-long-0.3.2.tgz#9e38773fc93c9c5ecfea200635878593ea577fb0"
+  integrity sha512-5gTjPH6HUmtNhamv8MPwExWo01Z4d9CT5njZlupqqbmxzMXTbDOgCuP/jnK+9SV0Fs7nuyYlXv7pJ/nA2pAAuA==
+
+mongoose@5.10.7:
+  version "5.10.7"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.10.7.tgz#5590037f4d9078f4d4edac5c77f27b53829b1c94"
+  integrity sha512-oiofFrD4I5p3PhJXn49QyrU1nX5CY01qhPkfMMrXYPhkfGLEJVwFVO+0PsCxD91A2kQP+d/iFyk5U8e86KI8eQ==
+  dependencies:
+    bson "^1.1.4"
+    kareem "2.3.1"
+    mongodb "3.6.2"
+    mongoose-legacy-pluralize "1.0.2"
+    mpath "0.7.0"
+    mquery "3.2.2"
+    ms "2.1.2"
+    regexp-clone "1.0.0"
+    safe-buffer "5.2.1"
+    sift "7.0.1"
+    sliced "1.0.1"
 
 mongoose@^5.5.13:
   version "5.10.8"
@@ -8875,6 +8902,19 @@ strapi-connector-bookshelf@3.2.0:
     p-map "4.0.0"
     pluralize "^8.0.0"
     rimraf "3.0.0"
+    strapi-utils "3.2.0"
+
+strapi-connector-mongoose@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/strapi-connector-mongoose/-/strapi-connector-mongoose-3.2.0.tgz#7f473a9ed7722b293a0976170c0cf46148860c36"
+  integrity sha512-SwgZvb+57sTdVdcfeXqhx4iKMV/COcvyLD4uRRBzND4I5jYkJ+17fpqUpkrWlnBiASYYudo91XFB1XabhiQrng==
+  dependencies:
+    lodash "4.17.19"
+    mongoose "5.10.7"
+    mongoose-float "^1.0.4"
+    mongoose-long "^0.3.2"
+    pluralize "^8.0.0"
+    semver "^7.3.2"
     strapi-utils "3.2.0"
 
 strapi-database@3.2.0:
